@@ -49,7 +49,7 @@
   background: transparent;
   border: none;
   font-size: 2rem;
-  color: var(--text-color); // apply text color to close button too
+  color: var(--text-color);
   cursor: pointer;
 }
 
@@ -81,11 +81,14 @@
 
 @media (max-width: 600px) {
   .modal-content {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    margin: 1rem auto;
+    width: 100%;
+    max-width: 95%;
     padding: 15px;
-    width: 95%;
-    max-height: calc(100vh - 20px);
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
+    max-height: none;
   }
 }
