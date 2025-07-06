@@ -78,6 +78,27 @@
             "assets": ["src/assets", "src/favicon.ico"],
             "styles": ["src/styles.scss"]
           }
+        },
+        "server": {
+          "builder": "@angular/build:ssr",
+          "options": {
+            "outputPath": "dist/neko-words/server",
+            "main": "src/main.server.ts",
+            "tsConfig": "tsconfig.server.json"
+          },
+          "configurations": {
+            "production": {
+              "optimization": true,
+              "sourceMap": false,
+              "extractLicenses": true
+            },
+            "development": {
+              "optimization": false,
+              "sourceMap": true,
+              "extractLicenses": false
+            }
+          },
+          "defaultConfiguration": "production"
         }
       }
     }
