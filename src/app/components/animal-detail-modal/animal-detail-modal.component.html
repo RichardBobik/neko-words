@@ -2,12 +2,7 @@
 
 <div class="modal-content" @fadeZoom>
   <button class="close-btn" (click)="onClose()">×</button>
-  <img
-    [src]="animal.imageUrl"
-    alt="{{ animal.nameEn }}"
-    width="450"
-    height="450"
-  />
+  <img [src]="animal.imageUrl" alt="{{ animal.nameEn }}" class="modal-image" />
   <h2>{{ animal.nameEn }}</h2>
   <p>{{ animal.romaji }} / {{ animal.nameJpKana }}</p>
   <p *ngIf="animal.nameJpKanji">Kanji: {{ animal.nameJpKanji }}</p>
