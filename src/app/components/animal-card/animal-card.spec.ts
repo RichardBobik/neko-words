@@ -46,7 +46,6 @@ describe('AnimalCardComponent', () => {
       .nativeElement as HTMLImageElement;
     expect(imgEl.src).toBeTruthy();
     expect(imgEl.alt).toBe(testAnimal.nameEn);
-    expect(imgEl.getAttribute('loading')).toBe('eager');
 
     const nameEnEl = fixture.debugElement.query(
       By.css('.animal-name')

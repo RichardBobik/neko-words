@@ -21,7 +21,6 @@
   width: 90%;
   max-width: 500px;
 
-  // 🧠 Only constrain height if content overflows
   max-height: calc(100vh - 40px);
   overflow-y: auto;
 
@@ -74,5 +73,16 @@
 
   &:active {
     transform: scale(0.98);
+  }
+}
+
+@media (max-width: 600px) {
+  .modal-content {
+    padding: 15px;
+    width: 95%;
+    max-height: calc(100vh - 20px);
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }

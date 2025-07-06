@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Meta, Title } from '@angular/platform-browser';
 import { OnInit } from '@angular/core';
 import { AnimalCardComponent } from '../../components/animal-card/animal-card.component';
 import { AnimalService } from '../../services/animal.service';
@@ -8,7 +9,6 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Animal } from '../../models/animal.model';
 import { QuizQuestionComponent } from '../../components/quiz-question/quiz-question.component';
-import { QuizQuestion } from 'app/models/quiz-question.model';
 
 @Component({
   selector: 'app-home',
@@ -33,11 +33,21 @@ export class HomeComponent implements OnInit {
 
   constructor(
     private animalService: AnimalService,
-    public quizService: QuizService
+    public quizService: QuizService,
+    private meta: Meta,
+    private title: Title
   ) {}
 
   ngOnInit() {
     this.loadAnimals();
+
+    this.title.setTitle('Neko Words - Learn Animals in Japanese');
+
+    this.meta.updateTag({
+      name: 'description',
+      content:
+        'Learn Japanese animal names with interactive quizzes, detailed info, and beautiful images on Neko Words.',
+    });
   }
 
   loadAnimals() {

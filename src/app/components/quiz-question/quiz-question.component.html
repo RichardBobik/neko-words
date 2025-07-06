@@ -6,7 +6,12 @@
       Question {{ currentIndex + 1 }} of {{ totalQuestions }}
     </div>
 
-    <img [src]="question.imageUrl" class="quiz-image" />
+    <img
+      [src]="question.imageUrl"
+      class="quiz-image"
+      width="490"
+      height="490"
+    />
 
     <div class="options">
       <button
