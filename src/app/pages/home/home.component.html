@@ -1,0 +1,102 @@
+<div class="layout">
+  <aside class="sidebar">
+    <div class="logo">
+      <img src="assets/logo.jpg" alt="Logo" />
+      <h2>Neko Words</h2>
+    </div>
+
+    <nav class="category-menu">
+      <button
+        *ngFor="let cat of categories"
+        (click)="filterByCategory(cat)"
+        [class.active]="selectedCategory === cat"
+      >
+        {{ cat }}
+      </button>
+      <button (click)="clearFilter()" [class.active]="!selectedCategory">
+        Show All
+      </button>
+    </nav>
+
+    <div
+      class="theme-toggle"
+      (click)="toggleDarkMode()"
+      [class.dark]="isDarkMode"
+      role="button"
+      tabindex="0"
+      aria-label="Toggle dark mode"
+    >
+      <div class="toggle-icon">
+        <div class="sun"></div>
+        <div class="moon"></div>
+      </div>
+    </div>
+
+    <div class="quiz-menu">
+      <button (click)="startQuiz('romaji')">Romaji Quiz</button>
+      <button (click)="startQuiz('kana')">Kana Quiz</button>
+      <button (click)="startQuiz('kanji')">Kanji Quiz</button>
+    </div>
+  </aside>
+
+  <main class="content">
+    <div class="search-bar-wrapper">
+      <input
+        type="text"
+        [(ngModel)]="searchTerm"
+        placeholder="Search for an animal..."
+        class="search-bar"
+      />
+    </div>
+
+    <div class="animal-grid">
+      <app-animal-card
+        *ngFor="let animal of filteredAnimals"
+        [animal]="animal"
+        (cardClick)="openModal(animal)"
+      ></app-animal-card>
+    </div>
+
+    <app-animal-detail-modal
+      *ngIf="selectedAnimal"
+      [animal]="selectedAnimal"
+      (close)="closeModal()"
+    ></app-animal-detail-modal>
+
+    <div
+      *ngIf="isQuizActive && quizIndex < quizQuestions.length"
+      class="quiz-overlay"
+    >
+      <app-quiz-question
+        [question]="quizQuestions[quizIndex]"
+        [currentIndex]="quizIndex"
+        [totalQuestions]="quizQuestions.length"
+        (answer)="submitAnswer($event)"
+        (close)="endQuiz()"
+      />
+    </div>
+
+    <div *ngIf="quizCompleted" class="quiz-overlay">
+      <div class="quiz-modal combined-results">
+        <h2>🎉 Quiz Completed!</h2>
+        <p class="score">
+          You scored {{ quizScore }} / {{ quizQuestions.length }}
+        </p>
+
+        <div class="missed-questions" *ngIf="missedQuestions.length > 0">
+          <h3>Incorrect Answers:</h3>
+          <ul>
+            <li *ngFor="let q of missedQuestions">
+              {{ q.animalNameEn }}:
+              <span class="wrong">{{ q.selectedAnswer }}</span>
+              →
+              <span class="correct">{{ q.correctAnswer }}</span>
+            </li>
+          </ul>
+        </div>
+
+        <button (click)="endQuiz()">Close</button>
+      </div>
+    </div>
+  </main>
+</div>

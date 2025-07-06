@@ -1,0 +1,142 @@
+.layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 220px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 30px;
+
+  img {
+    max-width: 200px;
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+}
+
+.category-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  button {
+    padding: 8px 12px;
+    font-size: 0.95rem;
+    border: none;
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: left;
+
+    &.active {
+      background-color: #9fd3c7;
+      font-weight: bold;
+    }
+
+    &:hover {
+      background-color: #d0d0d0;
+    }
+  }
+}
+
+.quiz-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  button {
+    padding: 8px 12px;
+    font-size: 0.95rem;
+    border: none;
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: left;
+
+    &.active {
+      background-color: #9fd3c7;
+      font-weight: bold;
+    }
+
+    &:hover {
+      background-color: #d0d0d0;
+    }
+  }
+}
+
+.content {
+  flex: 1;
+  padding: 30px;
+}
+
+.search-bar-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  font-size: 1rem;
+  padding: 10px 16px;
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.animal-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
+.quiz-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); // dark overlay
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.quiz-modal {
+  background: var(--card-bg);
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  color: var(--text-color);
+  animation: fadeIn 0.3s ease-in;
+
+  max-width: 90vw;
+  max-height: 90vh;
+  width: 400px;
+  overflow-y: auto;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.quiz-modal .score {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}

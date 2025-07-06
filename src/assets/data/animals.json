@@ -1,0 +1,702 @@
+[
+  {
+    "id": 1,
+    "nameEn": "Cat",
+    "nameJpKana": "ねこ",
+    "nameJpKanji": "猫",
+    "romaji": "neko",
+    "imageUrl": "assets/images/cat.jpg",
+    "audioUrl": "assets/audio/neko.mp3",
+    "category": "Mammal"
+  },
+  {
+    "id": 2,
+    "nameEn": "Dog",
+    "nameJpKana": "いぬ",
+    "nameJpKanji": "犬",
+    "romaji": "inu",
+    "imageUrl": "assets/images/dog.jpg",
+    "audioUrl": "assets/audio/inu.mp3",
+    "category": "Mammal"
+  },
+  {
+    "id": 3,
+    "nameEn": "Elephant",
+    "nameJpKana": "ぞう",
+    "nameJpKanji": "象",
+    "romaji": "zō",
+    "imageUrl": "assets/images/elephant.jpg",
+    "audioUrl": "assets/audio/zou.mp3",
+    "category": "Mammal"
+  },
+  {
+    "id": 6,
+    "nameEn": "Horse",
+    "nameJpKana": "うま",
+    "nameJpKanji": "馬",
+    "romaji": "uma",
+    "imageUrl": "assets/images/horse.jpg",
+    "audioUrl": "assets/audio/uma.mp3",
+    "category": "Mammal"
+  },
+  {
+    "id": 8,
+    "nameEn": "Rabbit",
+    "nameJpKana": "うさぎ",
+    "nameJpKanji": "兎",
+    "romaji": "usagi",
+    "imageUrl": "assets/images/rabbit.jpg",
+    "audioUrl": "assets/audio/usagi.mp3",
+    "category": "Mammal"
+  },
+  {
+    "id": 9,
+    "nameEn": "Bear",
+    "nameJpKana": "くま",
+    "nameJpKanji": "熊",
+    "romaji": "kuma",
+    "imageUrl": "assets/images/bear.jpg",
+    "audioUrl": "assets/audio/kuma.mp3",
+    "category": "Mammal"
+  },
+  {
+    "id": 5,
+    "nameEn": "Bird",
+    "nameJpKana": "とり",
+    "nameJpKanji": "鳥",
+    "romaji": "tori",
+    "imageUrl": "assets/images/bird.jpg",
+    "audioUrl": "assets/audio/tori.mp3",
+    "category": "Bird"
+  },
+  {
+    "id": 10,
+    "nameEn": "Turtle",
+    "nameJpKana": "かめ",
+    "nameJpKanji": "亀",
+    "romaji": "kame",
+    "imageUrl": "assets/images/turtle.jpg",
+    "audioUrl": "assets/audio/kame.mp3",
+    "category": "Reptile"
+  },
+  {
+    "id": 4,
+    "nameEn": "Frog",
+    "nameJpKana": "かえる",
+    "nameJpKanji": "蛙",
+    "romaji": "kaeru",
+    "imageUrl": "assets/images/frog.jpg",
+    "audioUrl": "assets/audio/kaeru.mp3",
+    "category": "Amphibian"
+  },
+  {
+    "id": 7,
+    "nameEn": "Fish",
+    "nameJpKana": "さかな",
+    "nameJpKanji": "魚",
+    "romaji": "sakana",
+    "imageUrl": "assets/images/fish.jpg",
+    "audioUrl": "assets/audio/sakana.mp3",
+    "category": "Fish"
+  },
+  {
+    "id": 11,
+    "nameEn": "Butterfly",
+    "nameJpKana": "ちょう",
+    "nameJpKanji": "蝶",
+    "romaji": "chō",
+    "imageUrl": "assets/images/butterfly.jpg",
+    "audioUrl": "assets/audio/chou.mp3",
+    "category": "Insect"
+  },
+  {
+    "id": 12,
+    "nameEn": "Beetle",
+    "nameJpKana": "かぶとむし",
+    "nameJpKanji": "甲虫",
+    "romaji": "kabutomushi",
+    "imageUrl": "assets/images/beetle.jpg",
+    "audioUrl": "assets/audio/kabutomushi.mp3",
+    "category": "Insect"
+  },
+  {
+    "id": 13,
+    "nameEn": "Dragonfly",
+    "nameJpKana": "とんぼ",
+    "nameJpKanji": "蜻蛉",
+    "romaji": "tonbo",
+    "imageUrl": "assets/images/dragonfly.jpg",
+    "audioUrl": "assets/audio/tonbo.mp3",
+    "category": "Insect"
+  },
+  {
+    "id": 14,
+    "nameEn": "Cicada",
+    "nameJpKana": "せみ",
+    "nameJpKanji": "蝉",
+    "romaji": "semi",
+    "imageUrl": "assets/images/cicada.jpg",
+    "audioUrl": "assets/audio/semi.mp3",
+    "category": "Insect"
+  },
+  {
+    "id": 15,
+    "nameEn": "Ant",
+    "nameJpKana": "あり",
+    "nameJpKanji": "蟻",
+    "romaji": "ari",
+    "imageUrl": "assets/images/ant.jpg",
+    "audioUrl": "assets/audio/ari.mp3",
+    "category": "Insect"
+  },
+  {
+    "id": 16,
+    "nameEn": "Wasp",
+    "nameJpKana": "すずめばち",
+    "nameJpKanji": "雀蜂",
+    "romaji": "suzumebachi",
+    "imageUrl": "assets/images/wasp.jpg",
+    "audioUrl": "assets/audio/suzumebachi.mp3",
+    "category": "Insect"
+  },
+  {
+    "id": 17,
+    "nameEn": "Bee",
+    "nameJpKana": "みつばち",
+    "nameJpKanji": "蜜蜂",
+    "romaji": "mitsubachi",
+    "imageUrl": "assets/images/bee.jpg",
+    "audioUrl": "assets/audio/mitsubachi.mp3",
+    "category": "Insect"
+  },
+  {
+    "id": 18,
+    "nameEn": "Grasshopper",
+    "nameJpKana": "ばった",
+    "nameJpKanji": "蝗",
+    "romaji": "batta",
+    "imageUrl": "assets/images/grasshopper.jpg",
+    "audioUrl": "assets/audio/batta.mp3",
+    "category": "Insect"
+  },
+  {
+    "id": 19,
+    "nameEn": "Firefly",
+    "nameJpKana": "ほたる",
+    "nameJpKanji": "蛍",
+    "romaji": "hotaru",
+    "imageUrl": "assets/images/firefly.jpg",
+    "audioUrl": "assets/audio/hotaru.mp3",
+    "category": "Insect"
+  },
+  {
+    "id": 20,
+    "nameEn": "Ladybug",
+    "nameJpKana": "てんとうむし",
+    "nameJpKanji": "天道虫",
+    "romaji": "tentoumushi",
+    "imageUrl": "assets/images/ladybug.jpg",
+    "audioUrl": "assets/audio/tentoumushi.mp3",
+    "category": "Insect"
+  },
+  {
+    "id": 21,
+    "nameEn": "Salamander",
+    "nameJpKana": "さんしょううお",
+    "nameJpKanji": "山椒魚",
+    "romaji": "sanshōuo",
+    "imageUrl": "assets/images/salamander.jpg",
+    "audioUrl": "assets/audio/sanshouuo.mp3",
+    "category": "Amphibian"
+  },
+  {
+    "id": 22,
+    "nameEn": "Newt",
+    "nameJpKana": "あかはらとかげ",
+    "nameJpKanji": "赤腹蜥蜴",
+    "romaji": "akaharatokage",
+    "imageUrl": "assets/images/newt.jpg",
+    "audioUrl": "assets/audio/akaharatokage.mp3",
+    "category": "Amphibian"
+  },
+  {
+    "id": 23,
+    "nameEn": "Caecilian",
+    "nameJpKana": "みみずとかげ",
+    "nameJpKanji": "蚯蚓蜥蜴",
+    "romaji": "mimizutokage",
+    "imageUrl": "assets/images/caecilian.jpg",
+    "audioUrl": "assets/audio/mimizutokage.mp3",
+    "category": "Amphibian"
+  },
+  {
+    "id": 24,
+    "nameEn": "Tree Frog",
+    "nameJpKana": "きがえる",
+    "nameJpKanji": "木蛙",
+    "romaji": "kigaeru",
+    "imageUrl": "assets/images/treefrog.jpg",
+    "audioUrl": "assets/audio/kigaeru.mp3",
+    "category": "Amphibian"
+  },
+  {
+    "id": 25,
+    "nameEn": "Asian Toad",
+    "nameJpKana": "がまがえる",
+    "nameJpKanji": "蟾蛙",
+    "romaji": "gamagaeru",
+    "imageUrl": "assets/images/asiantoad.jpg",
+    "audioUrl": "assets/audio/gamagaeru.mp3",
+    "category": "Amphibian"
+  },
+  {
+    "id": 26,
+    "nameEn": "Japanese Giant Salamander",
+    "nameJpKana": "おおさんしょううお",
+    "nameJpKanji": "大山椒魚",
+    "romaji": "oosanshouuo",
+    "imageUrl": "assets/images/giantsalamander.jpg",
+    "audioUrl": "assets/audio/oosanshouuo.mp3",
+    "category": "Amphibian"
+  },
+  {
+    "id": 27,
+    "nameEn": "Olm",
+    "nameJpKana": "みみなしうお",
+    "nameJpKanji": "耳無し魚",
+    "romaji": "miminashiuo",
+    "imageUrl": "assets/images/olm.jpg",
+    "audioUrl": "assets/audio/miminashiuo.mp3",
+    "category": "Amphibian"
+  },
+  {
+    "id": 28,
+    "nameEn": "Fire Salamander",
+    "nameJpKana": "ひざんしょううお",
+    "nameJpKanji": "火山椒魚",
+    "romaji": "hizanshouuo",
+    "imageUrl": "assets/images/firesalamander.jpg",
+    "audioUrl": "assets/audio/hizanshouuo.mp3",
+    "category": "Amphibian"
+  },
+  {
+    "id": 29,
+    "nameEn": "Marbled Newt",
+    "nameJpKana": "まだらあかはらとかげ",
+    "nameJpKanji": "斑赤腹蜥蜴",
+    "romaji": "madaraakaharatokage",
+    "imageUrl": "assets/images/marblednewt.jpg",
+    "audioUrl": "assets/audio/madaraakaharatokage.mp3",
+    "category": "Amphibian"
+  },
+  {
+    "id": 30,
+    "nameEn": "Snake",
+    "nameJpKana": "へび",
+    "nameJpKanji": "蛇",
+    "romaji": "hebi",
+    "imageUrl": "assets/images/snake.jpg",
+    "audioUrl": "assets/audio/hebi.mp3",
+    "category": "Reptile"
+  },
+  {
+    "id": 31,
+    "nameEn": "Lizard",
+    "nameJpKana": "とかげ",
+    "nameJpKanji": "蜥蜴",
+    "romaji": "tokage",
+    "imageUrl": "assets/images/lizard.jpg",
+    "audioUrl": "assets/audio/tokage.mp3",
+    "category": "Reptile"
+  },
+  {
+    "id": 32,
+    "nameEn": "Crocodile",
+    "nameJpKana": "わに",
+    "nameJpKanji": "鰐",
+    "romaji": "wani",
+    "imageUrl": "assets/images/crocodile.jpg",
+    "audioUrl": "assets/audio/wani.mp3",
+    "category": "Reptile"
+  },
+  {
+    "id": 33,
+    "nameEn": "Alligator",
+    "nameJpKana": "アリゲーター",
+    "nameJpKanji": "",
+    "romaji": "arigētā",
+    "imageUrl": "assets/images/alligator.jpg",
+    "audioUrl": "assets/audio/arigeeta.mp3",
+    "category": "Reptile"
+  },
+  {
+    "id": 34,
+    "nameEn": "Gecko",
+    "nameJpKana": "やもり",
+    "nameJpKanji": "守宮",
+    "romaji": "yamori",
+    "imageUrl": "assets/images/gecko.jpg",
+    "audioUrl": "assets/audio/yamori.mp3",
+    "category": "Reptile"
+  },
+  {
+    "id": 35,
+    "nameEn": "Iguana",
+    "nameJpKana": "イグアナ",
+    "nameJpKanji": "",
+    "romaji": "iguana",
+    "imageUrl": "assets/images/iguana.jpg",
+    "audioUrl": "assets/audio/iguana.mp3",
+    "category": "Reptile"
+  },
+  {
+    "id": 36,
+    "nameEn": "Chameleon",
+    "nameJpKana": "カメレオン",
+    "nameJpKanji": "",
+    "romaji": "kamereon",
+    "imageUrl": "assets/images/chameleon.jpg",
+    "audioUrl": "assets/audio/kamereon.mp3",
+    "category": "Reptile"
+  },
+  {
+    "id": 37,
+    "nameEn": "Komodo Dragon",
+    "nameJpKana": "コモドドラゴン",
+    "nameJpKanji": "",
+    "romaji": "komododoragon",
+    "imageUrl": "assets/images/komododragon.jpg",
+    "audioUrl": "assets/audio/komododoragon.mp3",
+    "category": "Reptile"
+  },
+  {
+    "id": 38,
+    "nameEn": "Monitor Lizard",
+    "nameJpKana": "オオトカゲ",
+    "nameJpKanji": "大蜥蜴",
+    "romaji": "ōtokage",
+    "imageUrl": "assets/images/monitorlizard.jpg",
+    "audioUrl": "assets/audio/ootokage.mp3",
+    "category": "Reptile"
+  },
+  {
+    "id": 39,
+    "nameEn": "Goldfish",
+    "nameJpKana": "きんぎょ",
+    "nameJpKanji": "金魚",
+    "romaji": "kingyo",
+    "imageUrl": "assets/images/goldfish.jpg",
+    "audioUrl": "assets/audio/kingyo.mp3",
+    "category": "Fish"
+  },
+  {
+    "id": 40,
+    "nameEn": "Koi",
+    "nameJpKana": "こい",
+    "nameJpKanji": "鯉",
+    "romaji": "koi",
+    "imageUrl": "assets/images/koi.jpg",
+    "audioUrl": "assets/audio/koi.mp3",
+    "category": "Fish"
+  },
+  {
+    "id": 41,
+    "nameEn": "Tuna",
+    "nameJpKana": "まぐろ",
+    "nameJpKanji": "鮪",
+    "romaji": "maguro",
+    "imageUrl": "assets/images/tuna.jpg",
+    "audioUrl": "assets/audio/maguro.mp3",
+    "category": "Fish"
+  },
+  {
+    "id": 42,
+    "nameEn": "Salmon",
+    "nameJpKana": "さけ",
+    "nameJpKanji": "鮭",
+    "romaji": "sake",
+    "imageUrl": "assets/images/salmon.jpg",
+    "audioUrl": "assets/audio/sake.mp3",
+    "category": "Fish"
+  },
+  {
+    "id": 43,
+    "nameEn": "Clownfish",
+    "nameJpKana": "カクレクマノミ",
+    "nameJpKanji": "",
+    "romaji": "kakurekumanomi",
+    "imageUrl": "assets/images/clownfish.jpg",
+    "audioUrl": "assets/audio/kakurekumanomi.mp3",
+    "category": "Fish"
+  },
+  {
+    "id": 44,
+    "nameEn": "Angelfish",
+    "nameJpKana": "エンゼルフィッシュ",
+    "nameJpKanji": "",
+    "romaji": "enzerufisshu",
+    "imageUrl": "assets/images/angelfish.jpg",
+    "audioUrl": "assets/audio/enzerufisshu.mp3",
+    "category": "Fish"
+  },
+  {
+    "id": 45,
+    "nameEn": "Blowfish",
+    "nameJpKana": "ふぐ",
+    "nameJpKanji": "河豚",
+    "romaji": "fugu",
+    "imageUrl": "assets/images/blowfish.jpg",
+    "audioUrl": "assets/audio/fugu.mp3",
+    "category": "Fish"
+  },
+  {
+    "id": 46,
+    "nameEn": "Eel",
+    "nameJpKana": "うなぎ",
+    "nameJpKanji": "鰻",
+    "romaji": "unagi",
+    "imageUrl": "assets/images/eel.jpg",
+    "audioUrl": "assets/audio/unagi.mp3",
+    "category": "Fish"
+  },
+  {
+    "id": 47,
+    "nameEn": "Mackerel",
+    "nameJpKana": "さば",
+    "nameJpKanji": "鯖",
+    "romaji": "saba",
+    "imageUrl": "assets/images/mackerel.jpg",
+    "audioUrl": "assets/audio/saba.mp3",
+    "category": "Fish"
+  },
+  {
+    "id": 48,
+    "nameEn": "Sparrow",
+    "nameJpKana": "すずめ",
+    "nameJpKanji": "雀",
+    "romaji": "suzume",
+    "imageUrl": "assets/images/sparrow.jpg",
+    "audioUrl": "assets/audio/suzume.mp3",
+    "category": "Bird"
+  },
+  {
+    "id": 49,
+    "nameEn": "Crow",
+    "nameJpKana": "からす",
+    "nameJpKanji": "烏",
+    "romaji": "karasu",
+    "imageUrl": "assets/images/crow.jpg",
+    "audioUrl": "assets/audio/karasu.mp3",
+    "category": "Bird"
+  },
+  {
+    "id": 50,
+    "nameEn": "Pigeon",
+    "nameJpKana": "はと",
+    "nameJpKanji": "鳩",
+    "romaji": "hato",
+    "imageUrl": "assets/images/pigeon.jpg",
+    "audioUrl": "assets/audio/hato.mp3",
+    "category": "Bird"
+  },
+  {
+    "id": 51,
+    "nameEn": "Peacock",
+    "nameJpKana": "くじゃく",
+    "nameJpKanji": "孔雀",
+    "romaji": "kujaku",
+    "imageUrl": "assets/images/peacock.jpg",
+    "audioUrl": "assets/audio/kujaku.mp3",
+    "category": "Bird"
+  },
+  {
+    "id": 52,
+    "nameEn": "Owl",
+    "nameJpKana": "ふくろう",
+    "nameJpKanji": "梟",
+    "romaji": "fukurō",
+    "imageUrl": "assets/images/owl.jpg",
+    "audioUrl": "assets/audio/fukurou.mp3",
+    "category": "Bird"
+  },
+  {
+    "id": 53,
+    "nameEn": "Duck",
+    "nameJpKana": "かも",
+    "nameJpKanji": "鴨",
+    "romaji": "kamo",
+    "imageUrl": "assets/images/duck.jpg",
+    "audioUrl": "assets/audio/kamo.mp3",
+    "category": "Bird"
+  },
+  {
+    "id": 54,
+    "nameEn": "Swan",
+    "nameJpKana": "はくちょう",
+    "nameJpKanji": "白鳥",
+    "romaji": "hakuchō",
+    "imageUrl": "assets/images/swan.jpg",
+    "audioUrl": "assets/audio/hakuchou.mp3",
+    "category": "Bird"
+  },
+  {
+    "id": 55,
+    "nameEn": "Parrot",
+    "nameJpKana": "おうむ",
+    "nameJpKanji": "鸚鵡",
+    "romaji": "ōmu",
+    "imageUrl": "assets/images/parrot.jpg",
+    "audioUrl": "assets/audio/oumu.mp3",
+    "category": "Bird"
+  },
+  {
+    "id": 56,
+    "nameEn": "Woodpecker",
+    "nameJpKana": "きつつき",
+    "nameJpKanji": "啄木鳥",
+    "romaji": "kitsutsuki",
+    "imageUrl": "assets/images/woodpecker.jpg",
+    "audioUrl": "assets/audio/kitsutsuki.mp3",
+    "category": "Bird"
+  },
+  {
+    "id": 57,
+    "nameEn": "Dolphin",
+    "nameJpKana": "いるか",
+    "nameJpKanji": "海豚",
+    "romaji": "iruka",
+    "imageUrl": "assets/images/dolphin.jpg",
+    "audioUrl": "assets/audio/iruka.mp3",
+    "category": "Mammal"
+  },
+  {
+    "id": 58,
+    "nameEn": "Whale",
+    "nameJpKana": "くじら",
+    "nameJpKanji": "鯨",
+    "romaji": "kujira",
+    "imageUrl": "assets/images/whale.jpg",
+    "audioUrl": "assets/audio/kujira.mp3",
+    "category": "Mammal"
+  },
+  {
+    "id": 59,
+    "nameEn": "Monkey",
+    "nameJpKana": "さる",
+    "nameJpKanji": "猿",
+    "romaji": "saru",
+    "imageUrl": "assets/images/monkey.jpg",
+    "audioUrl": "assets/audio/saru.mp3",
+    "category": "Mammal"
+  },
+  {
+    "id": 60,
+    "nameEn": "Lion",
+    "nameJpKana": "らいおん",
+    "nameJpKanji": "獅子",
+    "romaji": "raion",
+    "imageUrl": "assets/images/lion.jpg",
+    "audioUrl": "assets/audio/raion.mp3",
+    "category": "Mammal"
+  },
+  {
+    "id": 61,
+    "nameEn": "Tiger",
+    "nameJpKana": "とら",
+    "nameJpKanji": "虎",
+    "romaji": "tora",
+    "imageUrl": "assets/images/tiger.jpg",
+    "audioUrl": "assets/audio/tora.mp3",
+    "category": "Mammal"
+  },
+  {
+    "id": 62,
+    "nameEn": "Wolf",
+    "nameJpKana": "おおかみ",
+    "nameJpKanji": "狼",
+    "romaji": "ōkami",
+    "imageUrl": "assets/images/wolf.jpg",
+    "audioUrl": "assets/audio/ookami.mp3",
+    "category": "Mammal"
+  },
+  {
+    "id": 63,
+    "nameEn": "Fox",
+    "nameJpKana": "きつね",
+    "nameJpKanji": "狐",
+    "romaji": "kitsune",
+    "imageUrl": "assets/images/fox.jpg",
+    "audioUrl": "assets/audio/kitsune.mp3",
+    "category": "Mammal"
+  },
+  {
+    "id": 64,
+    "nameEn": "Deer",
+    "nameJpKana": "しか",
+    "nameJpKanji": "鹿",
+    "romaji": "shika",
+    "imageUrl": "assets/images/deer.jpg",
+    "audioUrl": "assets/audio/shika.mp3",
+    "category": "Mammal"
+  },
+  {
+    "id": 65,
+    "nameEn": "Cow",
+    "nameJpKana": "うし",
+    "nameJpKanji": "牛",
+    "romaji": "ushi",
+    "imageUrl": "assets/images/cow.jpg",
+    "audioUrl": "assets/audio/ushi.mp3",
+    "category": "Mammal"
+  },
+  {
+    "id": 66,
+    "nameEn": "Pig",
+    "nameJpKana": "ぶた",
+    "nameJpKanji": "豚",
+    "romaji": "buta",
+    "imageUrl": "assets/images/pig.jpg",
+    "audioUrl": "assets/audio/buta.mp3",
+    "category": "Mammal"
+  },
+  {
+    "id": 67,
+    "nameEn": "Goat",
+    "nameJpKana": "やぎ",
+    "nameJpKanji": "山羊",
+    "romaji": "yagi",
+    "imageUrl": "assets/images/goat.jpg",
+    "audioUrl": "assets/audio/yagi.mp3",
+    "category": "Mammal"
+  },
+  {
+    "id": 68,
+    "nameEn": "Sheep",
+    "nameJpKana": "ひつじ",
+    "nameJpKanji": "羊",
+    "romaji": "hitsuji",
+    "imageUrl": "assets/images/sheep.jpg",
+    "audioUrl": "assets/audio/hitsuji.mp3",
+    "category": "Mammal"
+  },
+  {
+    "id": 69,
+    "nameEn": "Bat",
+    "nameJpKana": "こうもり",
+    "nameJpKanji": "蝙蝠",
+    "romaji": "kōmori",
+    "imageUrl": "assets/images/bat.jpg",
+    "audioUrl": "assets/audio/komori.mp3",
+    "category": "Mammal"
+  },
+  {
+    "id": 70,
+    "nameEn": "Hedgehog",
+    "nameJpKana": "はりねずみ",
+    "nameJpKanji": "針鼠",
+    "romaji": "harinezumi",
+    "imageUrl": "assets/images/hedgehog.jpg",
+    "audioUrl": "assets/audio/harinezumi.mp3",
+    "category": "Mammal"
+  }
+]

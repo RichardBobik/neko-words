@@ -1,0 +1,32 @@
+<div class="card" @fadeInUp (click)="onCardClick()">
+  <img
+    [src]="animal.imageUrl"
+    alt="{{ animal.nameEn }}"
+    [attr.loading]="animal.nameEn.toLowerCase() === 'frog' ? 'eager' : 'lazy'"
+  />
+  <div class="animal-name">{{ animal.nameEn }}</div>
+  <div class="romaji">
+    {{ animal.romaji }}
+  </div>
+  <div class="kana">
+    {{ animal.nameJpKana }}
+  </div>
+  <div class="kanji">
+    <span *ngIf="animal.nameJpKanji; else emptyKanji">
+      {{ animal.nameJpKanji }}
+    </span>
+    <ng-template #emptyKanji>&nbsp;</ng-template>
+  </div>
+
+  <div class="play-wrapper" (click)="onPlayClick($event)">
+    <div class="play-icon">&#9654;</div>
+    <div class="wave-bars" *ngIf="isPlaying">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</div>

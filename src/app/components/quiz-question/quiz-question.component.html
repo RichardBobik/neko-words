@@ -1,0 +1,21 @@
+<div class="quiz-modal">
+  <div class="quiz-card">
+    <button class="close-btn" (click)="onCloseClick()">×</button>
+
+    <div class="question-index">
+      Question {{ currentIndex + 1 }} of {{ totalQuestions }}
+    </div>
+
+    <img [src]="question.imageUrl" class="quiz-image" />
+
+    <div class="options">
+      <button
+        class="option"
+        *ngFor="let opt of question.options"
+        (click)="onAnswerClick(opt)"
+      >
+        {{ opt }}
+      </button>
+    </div>
+  </div>
+</div>
