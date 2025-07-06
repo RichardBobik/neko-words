@@ -33,8 +33,11 @@
   text-align: center;
 }
 
-.modal-content img {
-  max-width: 100%;
+.modal-content img,
+.modal-image {
+  width: 100%;
+  height: auto;
+  max-width: 450px;
   border-radius: 8px;
   margin-bottom: 15px;
 }
