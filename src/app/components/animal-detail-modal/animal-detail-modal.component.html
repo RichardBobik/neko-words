@@ -1,10 +1,16 @@
-<div class="modal-backdrop" @backdropFade (click)="onClose()"></div>
-
-<div class="modal-content" @fadeZoom>
-  <button class="close-btn" (click)="onClose()">×</button>
-  <img [src]="animal.imageUrl" alt="{{ animal.nameEn }}" class="modal-image" />
-  <h2>{{ animal.nameEn }}</h2>
-  <p>{{ animal.romaji }} / {{ animal.nameJpKana }}</p>
-  <p *ngIf="animal.nameJpKanji">Kanji: {{ animal.nameJpKanji }}</p>
-  <button class="audio-btn" (click)="playAudio()">▶ Hear Pronunciation</button>
+<div class="modal-backdrop" @backdropFade>
+  <div class="modal-content" @fadeZoom>
+    <button class="close-btn" (click)="onClose()">×</button>
+    <img
+      [src]="animal.imageUrl"
+      alt="{{ animal.nameEn }}"
+      class="modal-image"
+    />
+    <h2>{{ animal.nameEn }}</h2>
+    <p>{{ animal.romaji }} / {{ animal.nameJpKana }}</p>
+    <p *ngIf="animal.nameJpKanji">Kanji: {{ animal.nameJpKanji }}</p>
+    <button class="audio-btn" (click)="playAudio()">
+      ▶ Hear Pronunciation
+    </button>
+  </div>
 </div>

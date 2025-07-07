@@ -2,10 +2,16 @@
   position: fixed;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.6);
-  z-index: 999;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 1rem;
+  box-sizing: border-box;
+  overflow: auto;
 }
 
 .modal-content {
@@ -31,53 +37,54 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-}
 
-img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-
-.close-btn {
-  position: absolute;
-  top: 1px;
-  right: 2px;
-  background: transparent;
-  border: none;
-  font-size: 2rem;
-  color: var(--text-color);
-  cursor: pointer;
-}
-
-.audio-btn {
-  margin-top: 1rem;
-  padding: 0.75rem 1.5rem;
-  font-size: 1rem;
-  font-weight: bold;
-  color: white;
-  background-color: var(--accent-color, #db7a34);
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.1s ease;
-
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-
-  &:hover {
-    background-color: var(--accent-color-dark, #ac5a0c);
-    transform: translateY(-1px);
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
   }
 
-  &:active {
-    transform: scale(0.98);
+  .close-btn {
+    position: absolute;
+    top: 1px;
+    right: 2px;
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    color: var(--text-color);
+    cursor: pointer;
+  }
+
+  .audio-btn {
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: var(--accent-color, #db7a34);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    &:hover {
+      background-color: var(--accent-color-dark, #ac5a0c);
+      transform: translateY(-1px);
+    }
+
+    &:active {
+      transform: scale(0.98);
+    }
   }
 }
 
 @media (max-width: 600px) {
   .modal-content {
+    position: relative;
     padding: 15px;
     width: 95%;
     max-height: calc(100vh - 20px);
