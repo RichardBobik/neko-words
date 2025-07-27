@@ -1,59 +1,107 @@
-# NekoWords
+# 🐾 Neko Words
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.5.
+**Neko Words** is an Angular-based educational web app that helps users learn Japanese animal names interactively through visual cards, audio pronunciation, and multiple-choice quizzes.
 
-## Development server
+## 🚀 Features
 
-To start a local development server, run:
+- **Animal Catalog**
 
-```bash
-ng serve
-```
+  - Browse animals by category (e.g., Amphibian, Mammal, Bird).
+  - Search animals by English name.
+  - View detailed information and hear Japanese pronunciation.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+- **Audio Playback**
 
-## Code scaffolding
+  - Tap to hear the pronunciation of animal names in Japanese.
+  - Smooth fade and zoom animations enhance the user experience.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+- **Interactive Quizzes**
 
-```bash
-ng generate component component-name
-```
+  - Practice animal names in **romaji**, **kana**, or **kanji**.
+  - Score tracking, quiz progress, and review of missed questions.
+  - Configurable quiz modes with randomized questions and answers.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+- **Dark Mode**
 
-```bash
-ng generate --help
-```
+  - Toggle light/dark themes to suit your preference.
 
-## Building
+- **SEO-Friendly**
 
-To build the project run:
+  - Dynamic meta title and description for improved discoverability.
 
-```bash
-ng build
-```
+- **Progressive Web App**
+  - Supports offline access via service worker.
+  - SSR-ready using Angular Universal and Express.
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+---
 
-## Running unit tests
+## 🧱 Tech Stack
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+- **Framework**: Angular 20 (standalone components)
+- **Language**: TypeScript
+- **Animations**: Angular Animations
+- **PWA**: Angular Service Worker
+- **Backend**: Express (for SSR)
+- **Tooling**: Angular CLI, Prettier, Jasmine/Karma
 
-```bash
-ng test
-```
+---
 
-## Running end-to-end tests
+## 📂 Project Structure (Key Parts)
 
-For end-to-end (e2e) testing, run:
+| Path                                      | Description                                  |
+| ----------------------------------------- | -------------------------------------------- |
+| `src/app/pages/home/`                     | Main UI component (animal list, modal, quiz) |
+| `src/app/components/animal-card/`         | Card display with audio playback             |
+| `src/app/components/animal-detail-modal/` | Modal for animal details + audio             |
+| `src/app/components/quiz-question/`       | Quiz interface component                     |
+| `src/app/services/`                       | Core services: audio, quiz logic, data fetch |
+| `assets/data/animals.json`                | Static animal data file (English + Japanese) |
 
-```bash
-ng e2e
-```
+---
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+## 🧪 Available Scripts
 
-## Additional Resources
+| Command                        | Description                                |
+| ------------------------------ | ------------------------------------------ |
+| `npm start`                    | Run dev server at `http://localhost:4200/` |
+| `npm run build`                | Build app for production                   |
+| `npm run test`                 | Run unit tests with Karma/Jasmine          |
+| `npm run build:ssr`            | Build for server-side rendering            |
+| `npm run serve:ssr:neko-words` | Serve the SSR app using Node/Express       |
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+---
+
+## 🐱 Quiz Modes
+
+- **Romaji** – e.g., _neko_
+- **Kana** – e.g., _ねこ_
+- **Kanji** – e.g., _猫_
+
+Each mode selects 10 random animals, shuffles answer options, and tracks your score and progress.
+
+---
+
+## 📈 Future Ideas
+
+- Add audio for animal sounds (in addition to Japanese pronunciation).
+- Include spaced repetition tracking or flashcard mode.
+- Enable localization in other languages.
+
+---
+
+## 📌 Notes
+
+- All animal data is stored in a JSON file at `assets/data/animals.json`.
+- Dark mode applies by toggling the `dark-theme` class on the `<body>` element.
+
+---
+
+## 📃 License
+
+MIT License — free to use, modify, and distribute.
+
+---
+
+## 🙌 Acknowledgements
+
+Built with ❤️ using Angular. Designed to make language learning fun, interactive, and visual.

@@ -139,7 +139,7 @@ describe('HomeComponent', () => {
     component.startQuiz('romaji');
     component.endQuiz();
     expect(component.isQuizActive).toBeFalse();
-    expect(component.quizCompleted).toBeFalse(); // <- reset
+    expect(component.quizCompleted).toBeFalse();
     expect(component.quizQuestions.length).toBe(0);
   });
 
@@ -150,7 +150,7 @@ describe('HomeComponent', () => {
 
     for (let i = 0; i < totalQuestions; i++) {
       const question = component.quizQuestions[i];
-      component.submitAnswer(question.correctAnswer); // or wrong answer, doesn't matter here
+      component.submitAnswer(question.correctAnswer);
     }
 
     expect(component.quizCompleted).toBeTrue();
@@ -161,12 +161,10 @@ describe('HomeComponent', () => {
   it('should return missed questions', () => {
     component.startQuiz('romaji');
 
-    // Purposely answer wrong on the first question
     const firstQuestion = component.quizQuestions[0];
     const wrongAnswer = 'WRONG_ANSWER_NOT_IN_OPTIONS';
     component.submitAnswer(wrongAnswer);
 
-    // Answer the rest correctly (if any)
     for (let i = 1; i < component.quizQuestions.length; i++) {
       const question = component.quizQuestions[i];
       component.submitAnswer(question.correctAnswer);
